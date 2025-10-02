@@ -1,0 +1,30 @@
+title: YOUR NAME
+description: My place on the web
+url: https://YOURUSERNAME.github.io
+
+# Use the theme straight from GitHub
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Helpful add-ons (GitHub supports these)
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 5
+search: true          # turns on the search page
+include: ["_pages"]   # allows pages inside the _pages folder
+
+# Basic defaults so posts look nice
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
